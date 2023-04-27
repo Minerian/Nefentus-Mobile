@@ -2,8 +2,15 @@ import { StyleSheet, Text, View } from "react-native";
 import Heading1 from "./../components/text/heading1";
 import Paragraph from "../components/text/paragraph";
 import Button from "../components/button/Button";
+import { Video, ResizeMode } from 'expo-av';
+import * as React from 'react';
+
+
+
 
 const Welcome = () => {
+  const video = React.useRef(null);
+
   return (
     <View
       style={{
@@ -15,7 +22,6 @@ const Welcome = () => {
         paddingHorizontal: 30,
       }}
     >
-      {/* SET VIDEO HERE */}
       <View style={styles.textWrapper}>
         <Heading1 style={{ textAlign: "center" }}>
           Level-up Business with Nefentus
