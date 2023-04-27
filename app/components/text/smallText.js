@@ -9,7 +9,7 @@ export default SmallText;
 const styles = StyleSheet.create({
   text: {
     color: "#ffffff",
-    fontSize: 12,
+    fontSize: 10,
     fontWeight: 400,
     lineHeight: 12,
   },

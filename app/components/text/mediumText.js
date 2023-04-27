@@ -9,8 +9,8 @@ export default MediumText;
 const styles = StyleSheet.create({
   text: {
     color: "#ffffff",
-    fontSize: 14,
+    fontSize: 12,
     fontWeight: 400,
-    lineHeight: 20,
+    lineHeight: 16,
   },
 });

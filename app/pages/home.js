@@ -103,9 +103,9 @@ const Home = () => {
 
       <View>
         <SectionHeader title="Stats">
-          <SmallText style={{ color: "#1595C2" }}>
+          <MediumText style={{ color: "#1595C2" }}>
             Change to Affiliate
-          </SmallText>
+          </MediumText>
         </SectionHeader>
 
         <View style={{ marginLeft: 30, flexDirection: "row" }}>
@@ -247,7 +247,7 @@ const StatsBox = () => {
         <View style={{ marginRight: 30 }}>
           <Paragraph style={{ opacity: 1 }}>+1,500</Paragraph>
         </View>
-        <SmallText style={{ color: "#B3F19B" }}>+8.42%</SmallText>
+        <MediumText style={{ color: "#B3F19B" }}>+8.42%</MediumText>
       </View>
     </View>
   );

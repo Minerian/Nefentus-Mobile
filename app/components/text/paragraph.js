@@ -9,9 +9,9 @@ export default Paragraph;
 const styles = StyleSheet.create({
   text: {
     color: "#ffffff",
-    fontSize: 16,
+    fontSize: 14,
     fontWeight: 400,
-    lineHeight: 20,
+    lineHeight: 18,
     opacity: 0.6,
   },
 });

@@ -9,8 +9,8 @@ export default Heading1;
 const styles = StyleSheet.create({
   heading1: {
     color: "#ffffff",
-    fontSize: 30,
-    lineHeight: 38,
+    fontSize: 24,
+    lineHeight: 30,
     fontWeight: 500,
   },
 });
