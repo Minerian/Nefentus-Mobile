@@ -1,17 +1,16 @@
 import { StyleSheet, Text } from "react-native";
 
-const Paragraph = ({ children, style }) => {
+const MediumText = ({ children, style }) => {
   return <Text style={{ ...styles.text, ...style }}>{children}</Text>;
 };
 
-export default Paragraph;
+export default MediumText;
 
 const styles = StyleSheet.create({
   text: {
     color: "#ffffff",
-    fontSize: 16,
+    fontSize: 14,
     fontWeight: 400,
     lineHeight: 20,
-    opacity: 0.6,
   },
 });

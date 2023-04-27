@@ -12,6 +12,7 @@ const Welcome = () => {
         alignItems: "center",
         paddingBottom: 50,
         paddingTop: 100,
+        paddingHorizontal: 30,
       }}
     >
       {/* SET VIDEO HERE */}
