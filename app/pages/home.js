@@ -34,8 +34,8 @@ const Home = () => {
     <ScrollView
       contentContainerStyle={{ flexGrow: 1 }}
       showsVerticalScrollIndicator={false}
-      >
-      <View style={{flex: 1, marginTop: 50 }}>
+    >
+      <View style={{ flex: 1, marginTop: 50 }}>
         <View style={{ marginHorizontal: 30 }}>
           <Image
             style={{ width: 120, marginBottom: 10 }}
@@ -231,9 +231,9 @@ const StatsBox = () => {
     >
       <Image
         style={{
-          height: 16,
-          marginBottom: 10,
-          alignSelf: "center",
+          height: 16, 
+          aspectRatio: 1, 
+          alignSelf: 'flex-start', 
         }}
         resizeMode="contain"
         source={require("../assets/images/stats1.png")}
@@ -259,3 +259,5 @@ const StatsBox = () => {
     </View>
   );
 };
+
+
