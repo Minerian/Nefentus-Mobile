@@ -3,7 +3,7 @@ import Paragraph from "../text/paragraph";
 import SmallText from "../text/smallText";
 import MediumText from "../text/mediumText";
 
-const ItemLayout = ({ image, main, info, data }) => {
+const ItemLayout = ({ image, main, info, data, subData }) => {
   return (
     <View
       style={{
@@ -47,6 +47,19 @@ const ItemLayout = ({ image, main, info, data }) => {
           />
         ) : (
           <Paragraph style={{ opacity: 1, fontWeight: 600 }}>{data}</Paragraph>
+        )}
+
+        {subData && (
+          <SmallText
+            style={{
+              opacity: 1,
+              fontWeight: 600,
+              textAlign: "right",
+              color: "#B3F19B",
+            }}
+          >
+            {subData}
+          </SmallText>
         )}
       </View>
     </View>

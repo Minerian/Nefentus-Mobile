@@ -1,15 +1,17 @@
 import { StyleSheet, Text } from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
 
-const Button = ({ children, gray, style }) => {
+const Button = ({ children, gray, style, icon }) => {
   return (
     <TouchableOpacity
       style={{
         ...styles.button,
+        flexDirection: "row",
         backgroundColor: gray ? "#333333" : "#1595C2",
         ...style,
       }}
     >
+      {icon && icon}
       <Text style={{ ...styles.buttonText }}>{children}</Text>
     </TouchableOpacity>
   );

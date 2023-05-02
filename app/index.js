@@ -16,11 +16,17 @@ import Exchange from "./pages/exchange";
 import Payroll from "./pages/payroll";
 import Employee from "./pages/employee";
 import AddEmployee from "./pages/addEmployee";
+import Wallet from "./pages/wallet";
+import Profile from "./pages/profile";
+import UserManagment from "./pages/userManagment";
+import AddUser from "./pages/addUser";
+import KYC from "./pages/kyc";
+import Request from "./pages/request";
 
 export default function Page() {
   return (
     <View style={styles.container}>
-      <AddEmployee />
+      <Request />
       <Navigation />
     </View>
   );

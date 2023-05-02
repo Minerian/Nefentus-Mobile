@@ -32,10 +32,10 @@ const icons = [
 const Home = () => {
   return (
     <ScrollView
-      contentContainerStyle={{ flexGrow: 1, paddingBottom: 100 }}
+      contentContainerStyle={{ flexGrow: 1, paddingBottom: 150 }}
       showsVerticalScrollIndicator={false}
     >
-      <View style={{ flex: 1, marginTop: 50 }}>
+      <View style={{ flex: 1, marginTop: 30 }}>
         <View style={{ marginHorizontal: 30 }}>
           <Image
             style={{ width: 120, marginBottom: 10 }}
