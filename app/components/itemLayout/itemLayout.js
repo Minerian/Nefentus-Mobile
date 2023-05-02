@@ -22,12 +22,32 @@ const ItemLayout = ({ image, main, info, data }) => {
 
         <View style={{ marginLeft: 10 }}>
           <Paragraph style={{ opacity: 1 }}>{main}</Paragraph>
-          <MediumText style={{ opacity: 0.6 }}>{info}</MediumText>
+          <MediumText
+            style={{
+              opacity: info === "Approved" || info === "Pending" ? 1 : 0.6,
+              color:
+                info === "Approved"
+                  ? "#B3F19B"
+                  : info === "Pending"
+                  ? "#EF5452"
+                  : "white",
+            }}
+          >
+            {info}
+          </MediumText>
         </View>
       </View>
 
       <View>
-        <Paragraph style={{ opacity: 1, fontWeight: 600 }}>{data}</Paragraph>
+        {data === "enter" ? (
+          <Image
+            source={require("../../assets/images/enter.png")}
+            style={{ height: 12, width: 7 }}
+            resizeMethod="contain"
+          />
+        ) : (
+          <Paragraph style={{ opacity: 1, fontWeight: 600 }}>{data}</Paragraph>
+        )}
       </View>
     </View>
   );

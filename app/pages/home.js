@@ -32,7 +32,7 @@ const icons = [
 const Home = () => {
   return (
     <ScrollView
-      contentContainerStyle={{ flexGrow: 1 }}
+      contentContainerStyle={{ flexGrow: 1, paddingBottom: 100 }}
       showsVerticalScrollIndicator={false}
     >
       <View style={{ flex: 1, marginTop: 50 }}>
@@ -44,7 +44,11 @@ const Home = () => {
           />
 
           <View
-            style={{ borderRadius: 10, backgroundColor: "#1595C2", padding: 20 }}
+            style={{
+              borderRadius: 10,
+              backgroundColor: "#1595C2",
+              padding: 20,
+            }}
           >
             <View
               style={{ flexDirection: "row", justifyContent: "space-between" }}
@@ -231,9 +235,9 @@ const StatsBox = () => {
     >
       <Image
         style={{
-          height: 16, 
-          aspectRatio: 1, 
-          alignSelf: 'flex-start', 
+          height: 16,
+          aspectRatio: 1,
+          alignSelf: "flex-start",
         }}
         resizeMode="contain"
         source={require("../assets/images/stats1.png")}
@@ -259,5 +263,3 @@ const StatsBox = () => {
     </View>
   );
 };
-
-

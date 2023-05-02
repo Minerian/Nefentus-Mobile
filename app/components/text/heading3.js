@@ -1,7 +1,7 @@
 import { StyleSheet, Text } from "react-native";
 
 const Heading3 = ({ children, style }) => {
-  return <Text style={{ ...style, ...styles.heading1 }}>{children}</Text>;
+  return <Text style={{ ...styles.heading1, ...style }}>{children}</Text>;
 };
 
 export default Heading3;

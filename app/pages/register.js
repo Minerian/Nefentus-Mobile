@@ -27,14 +27,19 @@ const contentData = [
   {
     title: "Create password",
     text: "Your password must be strong and kept confidential and can't be shareable.",
-    input1: { label: "Password", placeholder: "Enter password" },
-    input2: { label: "Verify password", placeholder: "Enter password again " },
+    input1: { label: "Password", placeholder: "Enter password", secure: true },
+    input2: {
+      label: "Verify password",
+      placeholder: "Enter password again",
+      secure: true,
+    },
     button: "Submit",
   },
 ];
 
 export default function Register() {
   const [activeIndex, setActiveIndex] = useState(0);
+
   return (
     <View style={{ flex: 1 }}>
       <Header style={{}}>
@@ -106,8 +111,13 @@ const Content = ({ title, buttonText, text, input1, input2 }) => {
             style={{ marginBottom: 20 }}
             placeholder={input1.placeholder}
             label={input1.label}
+            secure={input1.secure}
           />
-          <Input placeholder={input2.placeholder} label={input2.label} />
+          <Input
+            placeholder={input2.placeholder}
+            label={input2.label}
+            secure={input2.secure}
+          />
         </View>
       </View>
 
